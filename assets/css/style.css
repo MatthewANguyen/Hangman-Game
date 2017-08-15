@@ -1,4 +1,28 @@
+body {
+	background-color: #25C8D0;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+header {
+	font-size: 32px;
+	font-weight: 900;
+}
+
 p {
-	color: gray;
+	color: white;
 	letter-spacing: 2px;
+	font-size: 18px;
+}
+
+.hangman-border {
+	border-width: 2px;
+	border-style: solid;
+	border-color: white;
+	height: 120px;
+}
+
+.hangman-word {
+	text-align: center;
+	height: 100px;
+	line-height: 100px;
 }

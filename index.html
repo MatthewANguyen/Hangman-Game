@@ -5,20 +5,27 @@
 	<script src="assets/javascript/game.js"></script>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 </head>
 <body>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-md-12 text-center">
 				<header>Hangman</header>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-6">
-				<p>Press any key to start playing!</p>
+			<div class="col-md-2">
 			</div>
-			<div id="game" class="col-md-6">
-				<p>Hello</p>
+			<div class="col-md-8 hangman-border">
+				<div id="stats" class="col-md-6">
+					<p>Press any key to start playing!</p>
+				</div>
+				<div id="game" class="col-md-6 hangman-word">
+					<p></p>
+				</div>
+			</div>	
+			<div class="col-md-2">
 			</div>
 		</div>
 	</div>
