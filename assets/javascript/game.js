@@ -1,10 +1,6 @@
-function test() {
-	console.log("hello");
-}
-
 var words = ["airplane", "helicopter", "rainbow", "seagull", 
 			"eagle", "hummingbird", "drone", "dragonfly", "kite",
-			"rocket", "pelican", "butterfly"];
+			"rocket", "pelican", "butterfly", "vulture", "sparrow"];
 var guessedLetters = [];
 var currentWord;
 var currentDisplay = "";
@@ -17,11 +13,12 @@ var guessesLeft = 10;
 
 //Initiates a new game
 function newGame() {
-	currentWord = words[Math.floor(Math.random() * words.length)];
-	lettersRemaining = currentWord.length;
+	currentWord = words[Math.floor(Math.random() * words.length)]; //Randomly chooses word
+	lettersRemaining = currentWord.length; //Initialize the lettersRemaining counter
+	//For each letter in the word that was randomly chosen
 	for(i = 0; i < currentWord.length; i++) {
-		currentDisplay += "_";
-		leftDisplay();
+		currentDisplay += "_"; //Display a blank for each letter
+		leftDisplay(); //Display the score, remaining letters, and letters guessed
 	}
 	document.getElementById("game").innerHTML = "<p>" + currentDisplay + "</p>";
 }
